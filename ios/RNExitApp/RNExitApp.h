@@ -6,14 +6,16 @@
 #import "React/RCTBridgeModule.h"
 #endif
 
-#if RCT_NEW_ARCH_ENABLED
-#import <ReactCodegen/RNExitAppSpec/RNExitAppSpec.h>
-#endif
+// Temporarily disabled New Architecture support for RNExitApp
+// #if RCT_NEW_ARCH_ENABLED
+// #import <React-Codegen/RNExitAppSpec/RNExitAppSpec.h>
+// #endif
 
 @interface RNExitApp : NSObject <RCTBridgeModule>
 @end
 
-#if RCT_NEW_ARCH_ENABLED
-@interface RNExitApp () <NativeRNExitAppSpec>
-@end
-#endif
+// Temporarily disabled New Architecture support for RNExitApp
+// #if RCT_NEW_ARCH_ENABLED
+// @interface RNExitApp () <NativeRNExitAppSpec>
+// @end
+// #endif
