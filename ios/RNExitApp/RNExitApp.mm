@@ -2,9 +2,10 @@
 
 #import "RNExitApp.h"
 
-#if RCT_NEW_ARCH_ENABLED
-#import <ReactCodegen/RNExitAppSpec/RNExitAppSpec.h>
-#endif
+// Temporarily disabled New Architecture support for RNExitApp
+// #if RCT_NEW_ARCH_ENABLED
+// #import <RNExitAppSpec/RNExitAppSpec.h>
+// #endif
 
 @implementation RNExitApp
 
@@ -17,14 +18,15 @@ RCT_EXPORT_METHOD(exitApp)
 
 # pragma mark - New Architecture
 
-#if RCT_NEW_ARCH_ENABLED
+// Temporarily disabled New Architecture support for RNExitApp
+// #if RCT_NEW_ARCH_ENABLED
 
-- (std::shared_ptr<facebook::react::TurboModule>)getTurboModule:
-    (const facebook::react::ObjCTurboModule::InitParams &)params
-{
-    return std::make_shared<facebook::react::NativeRNExitAppSpecJSI>(params);
-}
+// - (std::shared_ptr<facebook::react::TurboModule>)getTurboModule:
+//     (const facebook::react::ObjCTurboModule::InitParams &)params
+// {
+//     return std::make_shared<facebook::react::NativeRNExitAppSpecJSI>(params);
+// }
 
-#endif
+// #endif
 
 @end
